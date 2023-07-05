@@ -1,0 +1,40 @@
+:root {
+  --color-bg-1st: #050505;
+  --color-bg-4th: #0e0e0e;
+  --color-bg-2nd: #1c1c1c;
+  --color-bg-3rd: #4d4d4e;
+  --color-1st-accent: #713abf;
+  --color-text-on2nd-Bg: #515151;
+  --color-2nd-accent: #a885da;
+  --color-ico-messenger: #0084ff;
+  --color-ico-telegram: #0088c3;
+  --color-ico-facebook: #3b5998;
+  --color-ico-twitter: #1da1f2;
+  --color-ico-moreIco: #ff6550;
+  --color-ico-pinterest: #cb2027;
+  --color-actbtn: #fbc32e;
+  --color-actbtn-hover: #e6b01c;
+  --color-text-search: #1c1c1c;
+  --color-text-heading: #dddddd;
+  --color-text-synopsis: #777777;
+  --color-text-body: #aaaaaa;
+  --color-light: #ffffff;
+  --font-fam: Nunito;
+}
+input {
+  color: var(--color-text-body);
+  padding: 0px 10px;
+}
+a {
+  color: var(--color-text-heading);
+  font-size: 14.3px;
+}
+h3 {
+  font-size: 22.75px;
+}
+body {
+  background-color: var(--color-bg-1st);
+  color: rgb(1, 13, 24);
+  font-family: var(--font-fam);
+  color: var(--color-text-body);
+}
