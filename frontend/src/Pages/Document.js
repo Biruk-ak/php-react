@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from "react";
+
+import React, { useState, useEffect,useRef } from "react";
 import CheckBox from "../Components/CheckBox";
 import "../css/style.css";
+import FileUploadCard from "./Users/bamlak/Desktop/react/frontend/src/Pages/user/FileUploadCard.js"; 
+
+
 import {
   AiOutlineUpload,
   AiOutlineCloudUpload,
@@ -46,6 +50,9 @@ function ComponentView() {
     </div>
   );
 }
+
+
+//function createlinkcard
 function CreateLinkCard({ isOpen = false, onClose }) {
   const [docs, setDocs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -153,6 +160,9 @@ function CreateLinkCard({ isOpen = false, onClose }) {
   ) : null;
 }
 
+
+
+
 function DocumentView({
   nurl = [
     "http://localhost:8000/medias/addis_abeba_meskele_square1687976193.jpg",
@@ -250,6 +260,8 @@ function DocumentView({
     </div>
   );
 }
+
+
 function DocumentHome(props) {
   const [isCreateLinkOpen, setOpen] = useState(false);
   const closeLinkCreate = () => {
@@ -283,6 +295,7 @@ function DocumentHome(props) {
         <Button variant="contained" onClick={() => setOpen(true)}>
           Create Link <AiOutlineLink />
         </Button>
+        
       </div>
       <div style={{ display: "flex", width: "60%", backgroundColor: "blue" }}>
         <CreateLinkCard isOpen={isCreateLinkOpen} onClose={closeLinkCreate} />
@@ -297,8 +310,17 @@ function DocumentHome(props) {
       </div>
     </div>
   );
+
+
+
 }
+
 function LinkItem() {
   return <ListItem>Hello</ListItem>;
 }
+
+
+
+
+
 export default CreateLinkCard;
