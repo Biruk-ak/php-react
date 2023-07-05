@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #fff; */
+    text-decoration: none;
+    
+}
+.user-img{
+    width: 50px;
+    border-radius: 50%;
+    border:1px solid white;
+}
+.side-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: rgb(1, 1, 7);
+    padding: .4rem .8rem;
+    transition: all 0.5s ease;
+}
+.side-bar.active{
+    width: 250px;
+    /* height: 100%; */
+}
+.side-bar #btn{
+    position: absolute;
+    color: #fff;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.side-bar.active #btn{
+    left: 90%;
+}
+.side-bar .top .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    pointer-events: none;
+    align-items: center;
+    opacity: 0;
+}
+.side-bar.active .top .logo{
+    opacity: 1;
+}
+.top .logo{
+    font-size: 2rem;
+    margin-right: 5rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.user p{
+    color: #fff;
+    opacity: 1;
+    margin-left: 1rem;
+}
+.bold{
+    font-weight: 600;
+}
+.side-bar p{
+    opacity: 0;
+}
+.side-bar.active p {
+    opacity: 1;
+}
+.side-bar ul li{
+    position: relative;
+    list-style-type: none;
+    height: 22px;
+    width: 90%;
+    margin: 1rem auto;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+.side-bar ul li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;   
+}
+.side-bar ul li a:hover{
+    background-color: #fff;
+    color: #1217e1;
+    height: fit-content;
+}
+
+.side-bar ul li a ion-icon{
+    min-width: 50px;
+    text-align: center;
+    height: 20px;
+    line-height: 50px;
+    border-radius: 12px;
+}
+.side-bar .nav-item{
+    opacity: 0;
+}
+.side-bar.active .nav-item{
+    opacity: 1;
+}
+.side-bar ul li .tooltip{
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    height: 40px;
+    box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0, 0, 0, 0.2);
+    margin: 0.8rem auto;   
+    border-radius: .6rem;
+    padding: .3rem 1.2rem;
+    /* height: 5px; */
+    z-index: 20;
+    line-height: 1.8rem;
+    opacity: 0;
+    font-family: cursive;
+}
+.side-bar ul li #per,#not{
+    left:140px;
+}
+.side-bar ul li:hover .tooltip{
+    opacity: 1;
+}
+.side-bar.active ul li .tooltip{
+    display: none;
+}
